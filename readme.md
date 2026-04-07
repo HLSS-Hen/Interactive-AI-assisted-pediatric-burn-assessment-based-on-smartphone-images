@@ -23,7 +23,7 @@ Place your smartphone images into the `demo/data/` folder.
 - The app will display the **full-image heatmap** and **histogram**
 
 #### Step 3: Select Region of Interest (ROI)
-- Click **two points** on the image to draw a bounding box
+- 点击图片上的两个点 ， 绘制边界框
 - The tool will display the **heatmap** and **histogram** computed within the selected ROI (the rest of the image is masked out)
 
 #### Step 4: Apply Threshold Segmentation
@@ -41,6 +41,10 @@ Place your smartphone images into the `demo/data/` folder.
 - Click **"Save Annotations"**
 - A JSON file with the **same name as the image** will be created in `demo/data/`, containing all annotation data for that image
 
+## Limitations
+1. **Limited training population** – The model was fine-tuned exclusively on a small sample of Asian pediatric patients. Generalizability to other ethnic groups, age ranges, or adult populations has not been established.
+2. **Limited performance on deep burns** – Due to constraints in the training data, the model shows **limited performance in identifying deep second-degree (deep partial thickness) and third-degree (full thickness) burns**. Users should exercise caution when interpreting predictions for these burn depths.
+3. **Not validated for clinical use** – This tool is intended for research purposes only and has not undergone clinical validation. It should not be used for real-time clinical decision-making.
 ## License
 This project is licensed under the Apache 2.0 License.
 
