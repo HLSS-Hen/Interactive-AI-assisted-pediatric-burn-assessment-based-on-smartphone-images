@@ -23,7 +23,7 @@ Place your smartphone images into the `demo/data/` folder.
 - The app will display the **full-image heatmap** and **histogram**
 
 #### Step 3: Select Region of Interest (ROI)
-- 点击图片上的两个点 ， 绘制边界框
+- Click two points on the image
 - The tool will display the **heatmap** and **histogram** computed within the selected ROI (the rest of the image is masked out)
 
 #### Step 4: Apply Threshold Segmentation
